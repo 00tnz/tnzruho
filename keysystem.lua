@@ -2,7 +2,9 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/violi
 local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/addons/ThemeManager.lua"))()
 local HttpService = game:GetService("HttpService")
 
+-- Get key from raw GitHub
 local key = HttpService:GetAsync("https://raw.githubusercontent.com/00tnz/tnzruho/refs/heads/main/key")
+local CorrectKey = key:gsub("\n", "") -- clean newline so it matches correctly
 
 local Window = Library:CreateWindow({
     Title = "Tnzruho Key System",
@@ -15,7 +17,6 @@ local Window = Library:CreateWindow({
 local Tab = Window:AddTab("Login")
 local Group = Tab:AddLeftGroupbox("Enter Key")
 
-local CorrectKey = key
 local InputKey = ""
 
 Group:AddInput("KeyBox", {
@@ -30,7 +31,6 @@ Group:AddInput("KeyBox", {
 Group:AddButton("Submit", function()
     if InputKey == CorrectKey then
         Library:Notify("Correct key.", 2)
-        -- your safe script here
         print("put here loadstring")
     else
         Library:Notify("Invalid key.", 2)
