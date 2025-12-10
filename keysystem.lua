@@ -1,5 +1,8 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/Library.lua"))()
 local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/addons/ThemeManager.lua"))()
+local HttpService = game:GetService("HttpService")
+
+local key = HttpService:GetAsync("https://raw.githubusercontent.com/00tnz/tnzruho/refs/heads/main/key")
 
 local Window = Library:CreateWindow({
     Title = "Tnzruho Key System",
@@ -12,7 +15,7 @@ local Window = Library:CreateWindow({
 local Tab = Window:AddTab("Login")
 local Group = Tab:AddLeftGroupbox("Enter Key")
 
-local CorrectKey = "WeAreCharliKirk"
+local CorrectKey = "key"
 local InputKey = ""
 
 Group:AddInput("KeyBox", {
