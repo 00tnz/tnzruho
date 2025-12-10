@@ -15,7 +15,7 @@ local Window = Library:CreateWindow({
 local Tab = Window:AddTab("Login")
 local Group = Tab:AddLeftGroupbox("Enter Key")
 
-local CorrectKey = "key"
+local CorrectKey = key
 local InputKey = ""
 
 Group:AddInput("KeyBox", {
