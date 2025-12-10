@@ -8,7 +8,7 @@ local camera = workspace.CurrentCamera
 
 -- Configuration
 local lockKey = Enum.KeyCode.C
-local zoomFOV = 0        -- The Field of View when zoomed in
+local zoomFOV = 90        -- The Field of View when zoomed in
 local defaultFOV = 90     -- Standard Field of View
 local maxDistance = 200   -- How far away the lock can target (in studs)
 local smoothFactor = 0.5  -- How fast the camera snaps (0 to 1)
