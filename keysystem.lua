@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/violi
 local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/addons/ThemeManager.lua"))()
 
 local Window = Library:CreateWindow({
-    Title = "Key System",
+    Title = "Tnzruho Key System",
     Center = true,
     AutoShow = true,
     TabPadding = 8,
