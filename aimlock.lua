@@ -8,8 +8,8 @@ local camera = workspace.CurrentCamera
 
 -- Configuration
 local lockKey = Enum.KeyCode.C
-local zoomFOV = 90        -- The Field of View when zoomed in
-local defaultFOV = 90     -- Standard Field of View
+local zoomFOV = 30        -- The Field of View when zoomed in
+local defaultFOV = 70     -- Standard Field of View
 local maxDistance = 200   -- How far away the lock can target (in studs)
 local smoothFactor = 0.5  -- How fast the camera snaps (0 to 1)
 
@@ -46,13 +46,6 @@ local function getNearestPlayer()
 	end
 	
 	return closestPlayer
-end
-
--- Function: Toggle Zoom (Smooth)
-local function setZoom(shouldZoom)
-	local targetFOV = shouldZoom and zoomFOV or defaultFOV
-	local tween = TweenService:Create(camera, tweenInfo, {FieldOfView = targetFOV})
-	tween:Play()
 end
 
 -- Function: The Main Loop (Runs every frame)
