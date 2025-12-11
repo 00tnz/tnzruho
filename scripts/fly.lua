@@ -1,5 +1,3 @@
---[[ OBFUSCATED BY CHATGPT ]]--
-
 local E=string.char;local function N(s)local r=""for i=1,#s do r=r..E(s:byte(i)~51)end;return r end
 
 local v=N("Y\\YVTZM");local g=N("X^_");local P=N("Nv};}");local T=game:GetService(N("YVP}T\\]"));local q=game:GetService(N("YVP}~}P]"));local k=game:GetService(N("YVP}S_]T"));local L=T.LocalPlayer;local U=L:WaitForChild(N("DGZ\\YV\\WW"));local A=50;local S=2.4;local M=.15
